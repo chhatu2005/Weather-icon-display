@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #28aa63, #2a1044);
+    padding: 20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #0f2c86;
+    margin-bottom: 10px;
+}
+
+.weather-container > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.weather-display {
+    padding: 20px 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#weatherIcon {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+#weatherTitle {
+    color: #263a75;
+    margin-bottom: 10px;
+}
+
+#weatherDescription {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Weather backgrounds */
+.sunny {
+    background-color: #fff1b8;
+}
+
+.cloudy {
+    background-color: #e1e8f0;
+}
+
+.rainy {
+    background-color: #d6e8ff;
+}
+
+.snowy {
+    background-color: #eaf8ff;
+}
+
+.stormy {
+    background-color: #dcd6f7;
+}
+
+.windy {
+    background-color: #d8f5ed;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .weather-container {
+        max-width: 100%;
+        padding: 22px 16px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .weather-container > p {
+        font-size: 14px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    .weather-display {
+        padding: 18px 10px;
+    }
+
+    #weatherIcon {
+        font-size: 60px;
+    }
+
+    #weatherTitle {
+        font-size: 21px;
+    }
+
+    #weatherDescription {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}

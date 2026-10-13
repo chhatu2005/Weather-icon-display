@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Icon Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <p>Select a weather condition</p>
+
+        <select id="weatherSelect" onchange="showWeather()">
+            <option value="">Select Weather</option>
+            <option value="sunny">Sunny</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="rainy">Rainy</option>
+            <option value="snowy">Snowy</option>
+            <option value="stormy">Stormy</option>
+            <option value="windy">Windy</option>
+        </select>
+
+        <div class="weather-display" id="weatherDisplay">
+            <div id="weatherIcon">🌤️</div>
+            <h2 id="weatherTitle">Weather Condition</h2>
+            <p id="weatherDescription">
+                Select a condition to see the weather.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
